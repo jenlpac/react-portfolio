@@ -5,7 +5,7 @@ function About() {
     return (
         <section>
             <h1 id="about">About Me</h1>
-            <img src={profilePic} className="img" style={{ width: "20%" }} alt="portrait" />
+            <img src={profilePic} className="me" style={{ width: "20%" }} alt="portrait" />
             <p>Full-stack web developer with accounting background. Conquering web development one squashed bug at a time!</p>
         </section>
     );
