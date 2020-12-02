@@ -25,7 +25,7 @@ function Portfolio() {
             title: 'Card Social',
             link: 'https://cryptic-shelf-96558.herokuapp.com/',
             github: 'https://github.com/jenlpac/CardSocial',
-            tech: 'NodeJS | Express | MySQL | Sequelize | Javascript',
+            tech: 'NodeJS | Express | MySQL | Sequelize | JavaScript',
             description: 'A mobile application for people to exchange personal, social and business details via electonic card.'
         },
         {
@@ -33,7 +33,7 @@ function Portfolio() {
             title: 'SootheR',
             link: 'https://devmadia.github.io/soother/',
             github: 'https://github.com/jenlpac/soother',
-            tech: 'jQuery | Javascript | Foundation | Sass | HTML | CSS',
+            tech: 'jQuery | JavaScript | Foundation | Sass | HTML | CSS',
             description: 'An online news reader application that saves searched articles and provides positive quotes to encourage relaxation while catching up on current events.'
         },
         {
@@ -52,14 +52,14 @@ function Portfolio() {
             tech: 'NodeJS | Jest | Inquirer | HTML',
             description: 'An application to create an employee team roster. Walkthrough demo provided.'
         },
-        // {
-        //     image: ,
-        //     title: ,
-        //     link: ,
-        //     github: ,
-        //     tech: ,
-        //     description:
-        // },
+        {
+            image: empTracker,
+            title: 'Back End Employee Tracker',
+            link: 'https://drive.google.com/file/d/15y2L4Bi-VXa2ZbYqP6qw4k5_9XMTnOCO/view',
+            github: 'https://github.com/jenlpac/employee-tracker',
+            tech: 'MySQL | Inquirer | JavaScript',
+            description: 'Content management system to view and manage company departments, roles, and employees'
+        }
         // {
         //     image: ,
         //     title: ,
@@ -87,8 +87,8 @@ function Portfolio() {
                         <p>{project.description}</p>
                         <p>{project.tech}</p>
                         <p>
-                        <button>App</button>
-                        <button>GitHub</button>
+                        <button data-link={project.link}>App</button>
+                        <button data-link={project.github}>GitHub</button>
                         </p>
                     </section>
                 ))}
