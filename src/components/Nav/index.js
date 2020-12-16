@@ -1,9 +1,17 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Nav() {
+function Nav(props) {
+
+    const {
+        categories = [],
+        setCurrentCategory,
+        currentCategory,
+    } = props;
+
+
     return (
-        <header>
+        <header className="flex-row">
             <h2>
                 <a href="/">Jenniffer Paczkowski</a>
             </h2>
@@ -12,7 +20,7 @@ function Nav() {
                     <li className="li">
                         <a href="#about">Profile</a>
                     </li>
-                    <li className="li">
+                    <li className={"li mx-2 ${currentCategory && 'navActive'}"}>
                         <a href="#portfolio">My Work</a>
                     </li>
                     <li className="li">

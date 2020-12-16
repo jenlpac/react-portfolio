@@ -71,7 +71,7 @@ function Portfolio() {
     ])
     
     return (
-        <section className={'section-container'}>
+        <section id="portfolio" className={'section-container'}>
             <div>
                 <h1>Portfolio</h1>
                 <br></br>
