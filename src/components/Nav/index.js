@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
+import Resume from '../../assets/Resume/Resume.pdf';
 
 function Nav(props) {
 
@@ -27,7 +28,7 @@ function Nav(props) {
                         <a href="#contact">Contact</a>
                     </li>
                     <li className="li">
-                        <a href="#resume">Resume</a>
+                        <a href={Resume}>Resume</a>
                     </li>
                 </ul>
             </nav>
