@@ -68,7 +68,12 @@ function Portfolio() {
         //     tech: ,
         //     description:
         // }
-    ])
+    ]);
+
+    function btnClick(event){
+        var btnLink = event.target.getAttribute("btn-link");
+        window.open(btnLink,"_blank");
+    };
     
     return (
         <section id="portfolio" className={'section-container'}>
@@ -87,8 +92,8 @@ function Portfolio() {
                         <p>{project.description}</p>
                         <p>{project.tech}</p>
                         <p>
-                        <button data-link={project.link}>App</button>
-                        <button data-link={project.github}>GitHub</button>
+                        <button onClick={btnClick} btn-link={project.link}>App</button>
+                        <button onClick={btnClick} btn-link={project.github}>GitHub</button>
                         </p>
                     </section>
                 ))}
